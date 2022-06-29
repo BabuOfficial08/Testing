@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inspection Regulatory Report</title>
+
+	<link rel="stylesheet" href="https://github.com/BabuOfficial08/Streamlit/blob/Prod/style.css">
+	<!--<link rel="stylesheet"https://github.com/BabuOfficial08/Streamlit/blob/Prod/style.css"> -->
+</head>
+<body>
+	<img src="https://github.com/amitpatuseready/simplereports/blob/1d85517ae278aadde451966fb997440a65cc5a6e/logo.png">
+	<h1>Inspection Regulatory Report</h1>
+
+	<hr>
+	<p>[Inspection Start Date] between {{inspection_start_date}} and {{inspection_end_date}}</p>
+	<p>Inspection Site Visit Status: {{inspection_site_visit_status}} Critical EM: {{criticalEM}}</p>
+	<p>Type of Regulatory Action Received: {{regulatory_action}}</p>
+	<hr>
+
+	<h4>Start Date:</h4>
+	<table>
+		<tr>
+			<th colspan="2">Filters:</th>
+		</tr>
+		<tr>
+		<tr>
+			<td>Operating Group</td>
+			<td>{{operating_group}}</td>
+		</tr>
+		<tr>
+			<td>Business Group</td>
+			<td>{{business_group}}</td>
+		</tr>
+		<tr>
+			<td>Franchise</td>
+			<td>{{franchise}}</td>
+		</tr>
+		<tr>
+			<td>Company</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>Property</td>
+			<td>{{property}}</td>
+		</tr>
+		<tr>
+			<td>Region</td>
+			<td>{{region}}</td>
+		</tr>
+		<tr>
+			<td>Country</td>
+			<td>{{country}}</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<th colspan="9">Site Information</th>
+		</tr>
+		<tr>
+			<td>Operating Group</td>
+			<td>Business Group</td>
+			<td>Segment</td>
+			<td>SubBusiness</td>
+			<td>Franchise</td>
+			<td>Company</td>
+			<td>Property</td>
+			<td>Region</td>
+			<td>Country</td>
+		</tr>
+		<tr>
+			<td>{{operating_grp}}</td>
+			<td>{{business_grp}}</td>
+			<td>{{segment}}</td>
+			<td>{{segment}}</td>
+			<td>{{sub_business}}</td>
+			<td>{{fran}}</td>
+			<td>{{company}}</td>
+			<td>{{reg}}</td>
+			<td>{{count}}</td>
+		</tr>
+	</table>
+	<table>
+		<tr>
+			<th colspan="6">Approval Information</th>
+		</tr>
+		<tr>
+			<td>Inspection Site Type</td>
+			<td>Operating Company Contact</td>
+			<td>Product Name</td>
+			<td>First Pass Approval</td>
+			<td>Inspecting Organization/Issuing Agency</td>
+			<td>Other Inspecting Organization/Issuing Agency</td>
+		</tr>
+		<tr>
+			<td>{{inspect_site_type}}</td>
+			<td>{{operating_company_contact}}</td>
+			<td>{{product_name}}</td>
+			<td>{{first_pass_approval}}</td>
+			<td>{{inspect_org}}</td>
+			<td>{{other_inspect_org}}</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<th colspan="8">Inspection Information</th>
+		</tr>
+
+		<tr>
+			<td>Unique Id</td>
+			<td>{{unique_id}}</td>
+			<td>Created By</td>
+			<td>{{created_by}}</td>
+			<td>Created Date</td>
+			<td>{{create_date}}</td>
+			<td>On Site Visit</td>
+			<td>{{on_site_visit}}</td>
+		</tr>
+
+		<tr>
+			<td></td>
+			<td>16-Aug-2016</td>
+			<td>End Date</td>
+			<td>{{end_date}}</td>
+			<td>Notification Date:</td>
+			<td>{{notifi_date}}</td>
+			<td># Inspection Days</td>
+			<td>{{no_inspectio_day}}</td>
+		</tr>
+
+		<tr>
+			<td>Inspection Site Visit Status</td>
+			<td>{{inspect_site_visit_status}}</td>
+			<td>Inspection Report Issued</td>
+			<td>{{inspect_report_issued}}</td>
+			<td>Type of Report Issued</td>
+			<td>{{type_report_issue}}</td>
+			<td>FDA Report Received</td>
+			<td>{{fda_report_recieve}}</td>
+		</tr>
+
+		<tr>
+			<td>Type of Action</td>
+			<td>{{action_type}}</td>
+			<td>Inspection Originally Scheduled</td>
+			<td>{{inspect_orgi_sched}}</td>
+			<td>Date Report Issued or Expected</td>
+			<td>{{date_report_issue}}</td>
+			<td>Other Type of Report Issued</td>
+			<td>{{other_type_report_issue}}</td>
+		</tr>
+
+		<tr>
+			<td>Is Significant Inspection</td>
+			<td>{{inspect_sig}}</td>
+			<td>Significant Inspection Status</td>
+			<td>{{sig_inspect_stat}}</td>
+			<td>Significant Inspection Status Follow-up</td>
+			<td>{{sig_inspect_status_follow_up}}</td>
+			<td>Why was the Inspection classified as significant</td>
+			<td>{{why_inspect_classifi_sig}}</td>
+		</tr>
+			<td>Reviewed By</td>
+			<td>{{review_by}}</td>
+			<td>Date Reviewed</td>
+			<td>{{date_review}}</td>
+			<td>Unannounced</td>
+			<td>{{unannounced}}</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<th colspan="7">Brief Summary & Observation Details</th>
+			<th colspan="4">Observation Summary</th>
+			<th colspan="2">Inspection Focus</th>
+		</tr>
+
+		<tr>
+			<td>Observation Description</td>
+			<td>Severity</td>
+			<td>Category 1</td>
+			<td>Category 2</td>
+			<td>Category 3</td>
+			<td>Repeat</td>
+			<td>Comments</td>
+			<td>Critical</td>
+			<td>Major</td>
+			<td>Minor</td>
+			<td>Other</td>
+			<td></td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>{{obs_desc}}</td>
+			<td>{{severity}}</td>
+			<td>{{cat1}}</td>
+			<td>{{cat2}}</td>
+			<td>{{cat3}}</td>
+			<td>{{repeat}}</td>
+			<td>{{comments}}</td>
+			<td>{{critical}}</td>
+			<td>{{major}}</td>
+			<td>{{minor}}</td>
+			<td>{{other}}</td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
