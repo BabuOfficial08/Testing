@@ -1,3 +1,0 @@
-pdfkit
-streamlit
-snowflake-connector-python
